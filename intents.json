@@ -1,83 +1,278 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "hai halo",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hai",
+        "Halo"        
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hai",
+        "Halo, apa kabar?"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "balas hai halo",
+      "patterns": [
+        "baik",
+        "sehat",
+        "luar biasa"       
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "mantap",
+        ":)"
       ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
+      "tag": "kabar sistem",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "apa kabar",
+        "kalo kamu",
+        "kabarmu bagaimana"       
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "baik, ada yang bisa dibantu?",
+        "sehat, ada yang bisa dibantu?"
       ]
     },
     {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
+      "tag": "salam",
+      "patterns": ["Assalamualaikum"],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Waalaikumsalam"        
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "terima kasih",
+      "patterns": ["Terima kasih", "Thank you", "Makasi", "Terima Kasih banyak"],
+      "responses": ["iya", "Sama-sama", "senang bisa membantu"]
+    },
+    {
+      "tag": "jadwal kelas",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "jadwal kelas 3KA03",
+        "jadwal kelas",
+        "jadwal kuliah",
+        "jadkul"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "kelas 3KA03 memiliki jadwal kuliah di hari Selasa, Rabu, Kamis, Jumat, Sabtu"
+      ]
+    },
+	  {
+      "tag": "jadwal selasa",
+      "patterns": [
+        "jadwal mata kuliah matkul jadkul 3KA03 hari Selasa di jam berapa",
+        "jadwal Selasa"
+      ],
+      "responses": [
+        "jam 07.30-10.30 - Statistika, jam 11.30-13.30 - Sistem Terdistribusi, jam 15.30-17.30 - Tatap Muka PI"
+      ]
+    },
+	  {
+      "tag": "jadwal rabu",
+      "patterns": [
+        "jadwal mata kuliah matkul jadkul 3KA03 hari Rabu di jam berapa",
+        "jadwal rabu"
+      ],
+      "responses": [
+        "jam 07.30-09.30 - Konsep Data Mining, jam 10.30-13.30 - Analisis & Perancangan SI, jam 14.30-16.30 - Pemodelan & Visualisasi Data"
+      ]
+    },
+	  {
+      "tag": "jadwal kamis",
+      "patterns": [
+        "jadwal mata kuliah matkul jadkul 3KA03 hari Kamis di jam berapa",
+        "jadwal kamis"
+      ],
+      "responses": [
+        "jam 10.30-13.30 - Disain & Manaj. Jaringan Komputer, jam 13.30-15.30 - Sistem Berbasis Pengetahuan"
+      ]
+    },
+	  {
+      "tag": "jadwal jumat",
+      "patterns": [
+        "jadwal mata kuliah matkul jadkul 3KA03 hari Jumat di jam berapa",
+        "jadwal jumat"
+      ],
+      "responses": [
+        "jam 11.30-14.30 - Terapan Teori Graf"
+      ]
+    },
+	  {
+      "tag": "jadwal sabtu",
+      "patterns": [
+        "jadwal mata kuliah matkul jadkul 3KA03 hari Sabtu di jam berapa",
+        "jadwal sabtu"
+      ],
+      "responses": [
+        "jam 12.30-14.30 - Praktikum Terapan Teori Graf"
+      ]
+    },
+	  {
+      "tag": "dosen statistika",
+      "patterns": [
+        "siapa dosen Statistika kelas 3KA03",
+        "dosen Statistika"
+      ],
+      "responses": [
+        "Pak Destyanto Anggoro adalah dosen Statistika 3KA03, beliau mengajar 3KA03 di hari Selasa jam 07.30-10.30 di ruang E331 "
+      ]
+    },
+	  {
+      "tag": "dosen sistem terdistribusi",
+      "patterns": [
+        "siapa dosen Sistem Terdistribusi kelas 3KA03",
+        "dosen Sistem Terdistribusi"
+      ],
+      "responses": [
+        "Pak Arief Fadhlurrahman adalah dosen Sistem Terdistribusi 3KA03, beliau mengajar 3KA03 di hari Selasa jam 11.30-13.30 di ruang E311 "
+      ]
+    },
+	  {
+      "tag": "dosen tatap muka penulisan ilmiah",
+      "patterns": [
+        "siapa dosen Tatap Muka Penulisan Ilmiah kelas 3KA03",
+        "dosen Tatap Muka Penulisan Ilmiah",
+        "siapa dosen pi"
+      ],
+      "responses": [
+        "Tatap Muka Penulisan Ilmiah 3KA03 dibimbing oleh 3 dosen, ada ibu Dina Agusten, ibu Itar Mintarsih dan ibu Lira Arum. Jadwal bimbingan 3KA03 setiap hari Selasa jam 15.30-17.30 sesuai janji temu "
+      ]
+    },
+	  {
+      "tag": "dosen konsep data mining",
+      "patterns": [
+        "siapa dosen Konsep Data Mining kelas 3KA03",
+        "dosen Konsep Data Mining",
+        "siapa dosen kdm"
+      ],
+      "responses": [
+        "Ibu Ernastuti adalah dosen Konsep Data Mining 3KA03, beliau mengajar 3KA03 di hari Rabu jam 07.30-09.30 di ruang E217 "
+      ]
+    },
+	  {
+      "tag": "dosen analisis perancangan si",
+      "patterns": [
+        "siapa dosen Analisis & Perancangan SI kelas 3KA03",
+        "dosen Analisis & Perancangan SI",
+        "siapa dosen apsi"
+      ],
+      "responses": [
+        "Pak Taufik Hidayat adalah dosen Analisis & Perancangan SI 3KA03, beliau mengajar 3KA03 di hari Rabu jam 10.30-13.30 di ruang E217 "
+      ]
+    },
+	  {
+      "tag": "dosen pemodelan visualisasi data",
+      "patterns": [
+        "siapa dosen Pemodelan & Visualisasi Data kelas 3KA03",
+        "dosen Pemodelan & Visualisasi Data kelas 3KA03",
+        "siapa dosen pvd"
+      ],
+      "responses": [
+        "Ibu Oktaviani adalah dosen Pemodelan & Visualisasi Data 3KA03, beliau mengajar 3KA03 di hari Rabu jam 14.30-16.30 di ruang E413 "
+      ]
+    },
+	  {
+      "tag": "dosen disain manaj jaringan komputer",
+      "patterns": [
+        "siapa dosen Disain & Manaj.Jaringan Komputer kelas 3KA03",
+        "dosen Disain & Manaj.Jaringan Komputer",
+        "siapa dosen jarkom"
+      ],
+      "responses": [
+        "Pak Mochammad Akbar adalah dosen Disain & Manaj.Jaringan Komputer 3KA03, beliau mengajar 3KA03 di hari Kamis jam 10.30-13.30 di ruang F8426 "
+      ]
+    },
+	  {
+      "tag": "dosen sistem berbasis pengetahuan",
+      "patterns": [
+        "siapa dosen Sistem Berbasis Pengetahuan kelas 3KA03",
+        "dosen Sistem Berbasis Pengetahuan",
+        "siapa dosen sbp"
+      ],
+      "responses": [
+        "Ibu Dina Anggraini adalah dosen Sistem Berbasis Pengetahuan 3KA03, beliau mengajar 3KA03 di hari Kamis jam 13.30-15.30 di ruang F8426 "
+      ]
+    },
+	  {
+      "tag": "dosen terapan teori graf",
+      "patterns": [
+        "siapa dosen Terapan Teori Graf kelas 3KA03",
+        "dosen Terapan Teori Graf"
+      ],
+      "responses": [
+        "Terapan Teori Graf 3KA03 diajarkan oleh Team Teaching via UGTV dan V-Class, jadwalnya setiap hari Jumat jam 10.30-11.30 untuk materi di UGTV serta jam 11.30-14.30 untuk tugas V-Class"
+      ]
+    },
+	  {
+      "tag": "tugas selasa",
+      "patterns": [
+        "tugas selasa",
+        "seperti apa saja tugas 3KA03 di hari selasa"
+      ],
+      "responses": [
+        "Tugas kelas 3KA03 hari Selasa ini ada presentasi Statistika, VClass Sistem Terdistribusi dan Bimbingan PI "
+      ]        
+    },
+    {
+      "tag": "tugas rabu",
+      "patterns": [
+        "tugas rabu",
+        "seperti apa saja tugas 3KA03 di hari rabu"
+      ],
+      "responses": [
+        "Tugas kelas 3KA03 hari Rabu ini ada VClass Konsep Data Mining dan Pemodelan Visualisasi Data serta tugas quiz Analisis Perancangan SI"
+      ]        
+    },
+	  {
+      "tag": "tugas kamis",
+      "patterns": [
+        "tugas kamis",
+        "seperti apa saja tugas 3KA03 di hari kamis"
+      ],
+      "responses": [
+        "Tugas kelas 3KA03 hari Kamis ini ada VClass Sistem Berbasis Pengetahuan "
+      ]        
+    },
+    {
+      "tag": "tugas jumat",
+      "patterns": [
+        "tugas jumat",
+        "seperti apa saja tugas 3KA03 di hari Jumat"
+      ],
+      "responses": [
+        "Tugas kelas 3KA03 hari Jumat ini ada VClass Terapan Teori Graf "
+      ]        
+    },
+    {
+      "tag": "tugas sabtu",
+      "patterns": [
+        "tugas sabtu",
+        "seperti apa saja tugas 3KA03 di hari sabtu"
+      ],
+      "responses": [
+        "Tugas kelas 3KA03 hari Sabtu ini ada VClass Praktikum Terapan Teori Graf "
+      ]        
+    },
+    {
+      "tag": "daftar nama",
+      "patterns": [
+        "mahasiswa 3ka03",
+        "absensi 3ka03"
+      ],
+      "responses": [
+        "Untuk informasi seputar data mahasiswa 3KA03 bisa klik pada deskripsi di atas"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "kontak",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "minta kontak",
+        "info seputar kontak anak 3KA03 bisa menghubungi siapa ya?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Untuk informasi seputar 3KA03 lainnya bisa wa ke 085773762809 (Adil Bijaki) atau 082123055365 (Arka Fattah)"
       ]
     }
   ]
